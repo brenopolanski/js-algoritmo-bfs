@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Algoritmo BFS</title>
+	  	<meta name="author" content="Breno Polanski"/>
+	  	<meta name="description" content="Algoritmo de Busca em largura"/>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="bfs.js"></script>
+		<script>
+			$(document).ready(function(){
+				var grafo = [[1,1,0,0,1],
+				             [0,1,1,1,0],
+				             [0,0,1,1,0],
+				             [1,0,0,1,0],
+				             [0,0,0,1,1]];
+
+				breadthFirstSearch.bfs(grafo, 1, 4);
+			});	
+		</script>
+	</body>
+</html>
